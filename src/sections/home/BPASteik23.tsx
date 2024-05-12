@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { HashLink as NavLink } from "react-router-hash-link";
 
 const BPASteik23 = () => {
   return (
@@ -11,7 +11,7 @@ const BPASteik23 = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
           aliqua.
         </p>
-        <NavLink to="/tentang-bpa">
+        <NavLink smooth to="/tentang-bpa">
           <button className="bg-blue-900 px-4 py-2 text-white rounded-md hover:drop-shadow-xl hover:brightness-110">
             <p className="text-xl">Meet Our Team</p>
           </button>

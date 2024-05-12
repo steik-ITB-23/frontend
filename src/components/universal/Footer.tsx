@@ -5,7 +5,8 @@ import { FaYoutube } from "react-icons/fa6";
 import { FaTiktok } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiLinktree } from "react-icons/si";
-import { NavLink } from "react-router-dom";
+import { HashLink as NavLink } from "react-router-hash-link";
+
 import FeedbackForm from "./FeedbackForm";
 
 const Footer = () => {
@@ -53,10 +54,18 @@ const Footer = () => {
             </div>
 
             <div className="hidden lg:flex pl-2 py-4 lg:py-0 flex-col sm:flex-row justify-evenly items-start lg:items-center font-light grow uppercase">
-              <NavLink to="/">About Us</NavLink>
-              <NavLink to="/">Support Us</NavLink>
-              <NavLink to="/">Contact Us</NavLink>
-              <NavLink to="/">Media Kit</NavLink>
+              <NavLink smooth to="/">
+                About Us
+              </NavLink>
+              <NavLink smooth to="/">
+                Support Us
+              </NavLink>
+              <NavLink smooth to="/">
+                Contact Us
+              </NavLink>
+              <NavLink smooth to="/">
+                Media Kit
+              </NavLink>
             </div>
 
             <div className="flex flex-col justify-center pb-2 lg:pb-0 items-end grow-0 text-right">
@@ -73,19 +82,35 @@ const Footer = () => {
           </div>
           <div className="flex md:hidden flex-col md:flex-row py-4 uppercase gap-4 ">
             <div className="grow flex justify-between">
-              <NavLink to="/">About Us</NavLink>
-              <NavLink to="/">Support Us</NavLink>
+              <NavLink smooth to="/">
+                About Us
+              </NavLink>
+              <NavLink smooth to="/">
+                Support Us
+              </NavLink>
             </div>
             <div className="grow flex justify-between">
-              <NavLink to="/">Contact Us</NavLink>
-              <NavLink to="/">Media Kit</NavLink>
+              <NavLink smooth to="/">
+                Contact Us
+              </NavLink>
+              <NavLink smooth to="/">
+                Media Kit
+              </NavLink>
             </div>
           </div>
           <div className="hidden md:flex lg:hidden justify-evenly py-4 uppercase gap-4">
-            <NavLink to="/">About Us</NavLink>
-            <NavLink to="/">Support Us</NavLink>
-            <NavLink to="/">Contact Us</NavLink>
-            <NavLink to="/">Media Kit</NavLink>
+            <NavLink smooth to="/">
+              About Us
+            </NavLink>
+            <NavLink smooth to="/">
+              Support Us
+            </NavLink>
+            <NavLink smooth to="/">
+              Contact Us
+            </NavLink>
+            <NavLink smooth to="/">
+              Media Kit
+            </NavLink>
           </div>
           <div className="w-full flex justify-between gap-4 border-t-2 border-white">
             <div className="py-2">

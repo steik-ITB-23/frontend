@@ -1,7 +1,8 @@
 import { bpaListExternal, bpaListGeneral, bpaListInternal } from "../assets/data/bpaList";
 import { IoMdPerson } from "react-icons/io";
 import { getSlug } from "../lib/utils/stringManipulation";
-import { NavLink } from "react-router-dom";
+import { HashLink as NavLink } from "react-router-hash-link";
+
 import BPAbutton from "../components/bpa/BPAbutton";
 import BPAInfo from "../components/bpa/BPAinfo";
 
@@ -36,6 +37,7 @@ const PageTentangBpa = () => {
                   <h2 className="text-sm font-light uppercase tracking-wider md:pt-4 text-white">Petinggi</h2>
                   {bpaListGeneral.map((bpa) => (
                     <NavLink
+                      smooth
                       to={`/tentang-bpa/#${getSlug(bpa.name)}`}
                       key={bpa.name}
                       className="text-lg flex gap-2 items-center hover:bg-slate-50/50 ease-in duration-75">

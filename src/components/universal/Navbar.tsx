@@ -6,7 +6,7 @@ import { RiGroupLine } from "react-icons/ri";
 import { NavLink, useLocation } from "react-router-dom";
 
 const NavListDesktop = ({ href, routerPathname, lable }: { href: string; routerPathname: string; lable: string }) => (
-  <NavLink to={href} className="hidden md:block h-full">
+  <NavLink smooth to={href} className="hidden md:block h-full">
     <p
       className={
         routerPathname === href ? "border-b-2 border-gray-400" : "hover:brightness-110 hover:border-b-2 border-gray-400"
@@ -82,7 +82,7 @@ const Navbar = ({ mainColor = "#101351", mainTextColor }: { mainColor?: string; 
         }`}>
         <div className="w-full px-2 mx-auto">
           <div className="relative flex items-center justify-between">
-            <NavLink to="/" className="w-fit h-[5rem] flex items-center gap-4 pl-4">
+            <NavLink smooth to="/" className="w-fit h-[5rem] flex items-center gap-4 pl-4">
               <div className={`h-4 min-h-full py-2 transition-all duration-300`}>
                 <img
                   src="/steik23.svg"
@@ -141,16 +141,23 @@ const Navbar = ({ mainColor = "#101351", mainTextColor }: { mainColor?: string; 
                   </section>
 
                   <section className="flex flex-col gap-1">
-                    <NavLink to="/" className="bg-slate-50 hover:brightness-95 pl-2 py-1 flex items-center gap-2">
+                    <NavLink smooth to="/" className="bg-slate-50 hover:brightness-95 pl-2 py-1 flex items-center gap-2">
                       <GoHome size={19} /> Home
                     </NavLink>
-                    <NavLink to="/tentang-bpa" className="bg-slate-50 hover:brightness-95 pl-2 py-1 flex items-center gap-2">
+                    <NavLink
+                      smooth
+                      to="/tentang-bpa"
+                      className="bg-slate-50 hover:brightness-95 pl-2 py-1 flex items-center gap-2">
                       <GoCopilot size={19} /> BPA
                     </NavLink>
-                    <NavLink to="/akademik" className="bg-slate-50 hover:brightness-95 pl-2 py-1 flex items-center gap-2">
+                    <NavLink
+                      smooth="true"
+                      to="/akademik"
+                      className="bg-slate-50 hover:brightness-95 pl-2 py-1 flex items-center gap-2">
                       <IoMdBook size={19} /> Akademik
                     </NavLink>
                     <NavLink
+                      smooth
                       to="/acara-kemahasiswaan"
                       className="bg-slate-50 hover:brightness-95 pl-2 py-1 flex items-center gap-2">
                       <RiGroupLine size={19} /> Acara Kemahasiswaan
