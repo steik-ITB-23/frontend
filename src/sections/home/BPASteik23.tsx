@@ -19,8 +19,8 @@ const BPASteik23 = () => {
       </div>
       <div className="w-full md:w-[48%] h-full">
         <img
-          src="https://utfs.io/f/60569513-41b6-4c4d-851d-b9b889454e9c-c9r9pa.png"
-          alt="https://utfs.io/f/60569513-41b6-4c4d-851d-b9b889454e9c-c9r9pa.png"
+          src="/bpa-stei-k-min.png"
+          alt="/bpa-stei-k-min.png"
           width={1200}
           height={900}
           className="h-full w-full object-cover select-none rounded-xl drop-shadow-md hover:drop-shadow-xl"

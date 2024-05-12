@@ -39,7 +39,7 @@ const Footer = () => {
             <div className="flex gap-2 items-center grow-0">
               <div className="w-14 h-14 rounded-full">
                 <img
-                  src="https://utfs.io/f/268119f9-7747-4839-b494-9ae24a759506-x5d2zz.png"
+                  src="/icon-footer.png"
                   className={`w-full h-full cursor-pointer object-contain`}
                   height={300}
                   width={300}

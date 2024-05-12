@@ -20,17 +20,17 @@ const ProgramKami = () => {
     const fetchData = async () => {
       const pageData = [
         {
-          imgUrl: "https://utfs.io/f/60569513-41b6-4c4d-851d-b9b889454e9c-c9r9pa.png",
+          imgUrl: "/bpa-stei-k-min.png",
           name: "Tutor Sebaya",
           description: "Ikut Tubay (Tutor Sebaya) dan dapatkan voucher IP 4 dari BPA akademik STEI-K pasti IP 4",
         },
         {
-          imgUrl: "https://utfs.io/f/60569513-41b6-4c4d-851d-b9b889454e9c-c9r9pa.png",
+          imgUrl: "/bpa-stei-k-min.png",
           name: "Tutor Sebaya",
           description: "Ikut Tubay (Tutor Sebaya) dan dapatkan voucher IP 4 dari BPA akademik STEI-K pasti IP 4",
         },
         {
-          imgUrl: "https://utfs.io/f/60569513-41b6-4c4d-851d-b9b889454e9c-c9r9pa.png",
+          imgUrl: "/bpa-stei-k-min.png",
           name: "Tutor Sebaya",
           description: "Ikut Tubay (Tutor Sebaya) dan dapatkan voucher IP 4 dari BPA akademik STEI-K pasti IP 4",
         },

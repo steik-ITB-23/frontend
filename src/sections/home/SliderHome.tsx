@@ -18,17 +18,17 @@ const SliderHome = () => {
     const fetchData = async () => {
       const pageData = [
         {
-          imgUrl: "https://utfs.io/f/b6a7cd72-d4f0-426c-ac8b-b4df3d829b2c-wulzyk.png",
+          imgUrl: "/tpbcup-basket-putra.png",
           topic: "TPB Cup 2024",
           lable: "Bola Basket Putra - STEI",
         },
         {
-          imgUrl: "https://utfs.io/f/6b1b857b-e48d-4cd9-832e-b36ea6495dc5-el4pi2.png",
+          imgUrl: "/TPB-Cup-2024-Opening-min.png",
           topic: "TPB Cup 2024 Opening",
           lable: "Massa PERKARA",
         },
         {
-          imgUrl: "https://utfs.io/f/9e2bfd71-fc03-4e54-a88f-c947e81fa381-9s2rmh.png",
+          imgUrl: "/tpbcup-basket-putri-min.png",
           topic: "TPB Cup 2024",
           lable: "Bola Basket Putri - STEI",
         },

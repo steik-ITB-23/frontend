@@ -16,7 +16,7 @@ const PageTentangBpa = () => {
               <div className="w-fit h-[4.5rem] hidden md:flex items-center gap-2">
                 <div className={`h-4 min-h-full py-2 transition-all duration-300`}>
                   <img
-                    src="https://utfs.io/f/7648af4a-e902-454b-b937-b7433ef9aa2b-vbi1vd.svg"
+                    src="/steik23.svg"
                     className={`w-full h-full cursor-pointer object-contain`}
                     height={30}
                     width={30}
