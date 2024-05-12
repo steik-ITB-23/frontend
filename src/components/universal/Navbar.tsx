@@ -3,7 +3,8 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { GoHome, GoCopilot } from "react-icons/go";
 import { IoMdBook } from "react-icons/io";
 import { RiGroupLine } from "react-icons/ri";
-import { NavLink, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { HashLink as NavLink } from "react-router-hash-link";
 
 const NavListDesktop = ({ href, routerPathname, lable }: { href: string; routerPathname: string; lable: string }) => (
   <NavLink smooth to={href} className="hidden md:block h-full">
@@ -150,10 +151,7 @@ const Navbar = ({ mainColor = "#101351", mainTextColor }: { mainColor?: string; 
                       className="bg-slate-50 hover:brightness-95 pl-2 py-1 flex items-center gap-2">
                       <GoCopilot size={19} /> BPA
                     </NavLink>
-                    <NavLink
-                      smooth="true"
-                      to="/akademik"
-                      className="bg-slate-50 hover:brightness-95 pl-2 py-1 flex items-center gap-2">
+                    <NavLink smooth to="/akademik" className="bg-slate-50 hover:brightness-95 pl-2 py-1 flex items-center gap-2">
                       <IoMdBook size={19} /> Akademik
                     </NavLink>
                     <NavLink
