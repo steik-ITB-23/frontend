@@ -1,4 +1,5 @@
 import ComingSoon from "../components/universal/ComingSoon";
+import Footer from "../components/universal/Footer";
 
 const PageComingSoon = () => {
   return (
@@ -7,6 +8,7 @@ const PageComingSoon = () => {
         <section className="flex-grow flex items-center bg-slate-100 justify-center w-full px-4">
           <ComingSoon />
         </section>
+        <Footer />
       </section>
     </>
   );

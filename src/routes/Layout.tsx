@@ -1,7 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/universal/Navbar";
 import ScrollUpButton from "../components/universal/ScrollUpButton";
-import Footer from "../components/universal/Footer";
 import { Helmet } from "react-helmet";
 
 const Layout = () => {
@@ -40,7 +39,6 @@ const Layout = () => {
       <ScrollUpButton />
       <Navbar />
       <Outlet />
-      <Footer />
     </>
   );
 };

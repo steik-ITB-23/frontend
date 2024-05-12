@@ -4,6 +4,7 @@ import SliderHome from "../sections/home/SliderHome";
 import UpcomingEvents from "../sections/home/UpcomingEvents";
 import { useEffect } from "react";
 import AOS from "aos";
+import Footer from "../components/universal/Footer";
 
 export default function Home() {
   useEffect(() => {
@@ -33,6 +34,8 @@ export default function Home() {
       <ProgramKami />
 
       <BPASteik23 />
+
+      <Footer />
     </div>
   );
 }
