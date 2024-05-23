@@ -7,6 +7,7 @@ import { useLocation } from "react-router-dom";
 import { HashLink as NavLink } from "react-router-hash-link";
 import SignInMicrosoftButton from "./SignInMicrosoftButton";
 import { CurrentUserContext } from "../../contexts/CurrentUserContext";
+import { MdPerson } from "react-icons/md";
 
 const NavListDesktop = ({ href, routerPathname, lable }: { href: string; routerPathname: string; lable: string }) => (
   <NavLink smooth to={href} className="hidden md:block h-full">
@@ -102,7 +103,7 @@ const Navbar = ({ mainColor = "#101351", mainTextColor }: { mainColor?: string; 
                   Syntax
                 </h1>
                 <p
-                  className={`text-[16px] lg:text-lg duration-100 ease-in tracking-wider font-outfit leading-6 ${getTextColor()}`}>
+                  className={`text-[12px] md:text-[16px] lg:text-lg duration-100 ease-in tracking-wider font-outfit leading-6 ${getTextColor()}`}>
                   code, create, connect
                 </p>
               </div>
@@ -121,9 +122,16 @@ const Navbar = ({ mainColor = "#101351", mainTextColor }: { mainColor?: string; 
 
               {/* Sign IN */}
               {user?.displayName ? (
-                <button className="text-white px-4 py-2 rounded-full border-[1px] border-white">
-                  {user.displayName.length > 8 ? user.displayName.split(" ")[0] : user.displayName}
-                </button>
+                <NavLink to={"/profile/" + user?.nim}>
+                  <button className="text-white p-2 sm:px-4 sm:py-2 rounded-full border-[1px] border-white">
+                    <div className="hidden sm:block">
+                      {user.displayName.length > 8 ? user.displayName.split(" ")[0] : user.displayName}
+                    </div>
+                    <div className="sm:hidden block">
+                      <MdPerson />
+                    </div>
+                  </button>
+                </NavLink>
               ) : (
                 <SignInMicrosoftButton />
               )}

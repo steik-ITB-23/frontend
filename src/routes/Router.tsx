@@ -4,6 +4,9 @@ import Layout from "./Layout";
 import PageTentangBpa from "../pages/PageTentangBPA";
 import Custom404 from "../pages/Page404";
 import PageComingSoon from "../pages/PageComingSoon";
+import Akademik from "../pages/Akademik/Akademik";
+import Matkul from "../pages/Akademik/Matkul";
+// import Profile from "../pages/Profile/Profile";
 
 const router = createBrowserRouter([
   {
@@ -19,12 +22,27 @@ const router = createBrowserRouter([
         element: <PageTentangBpa />,
       },
       {
-        path: "/akademik/*",
-        element: <PageComingSoon />,
+        path: "/akademik",
+        element: <Akademik />,
+      },
+      {
+        path: "/akademik/:matkul",
+        element: <Matkul />,
       },
       {
         path: "/acara-kemahasiswaan",
         element: <PageComingSoon />,
+      },
+    ],
+  },
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "/profile/:nim",
+        element: <PageComingSoon />,
+        // element: <Profile />,
       },
     ],
   },

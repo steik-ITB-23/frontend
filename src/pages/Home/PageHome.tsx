@@ -12,7 +12,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="h-fit w-screen">
+    <div className="h-fit w-screen bg-slate-50">
       <section className="absolute top-0 left-0 flex-grow flex flex-col items-center justify-center w-full overflow-x-clip bg-[#F1F2F8]">
         <SliderHome />
       </section>
