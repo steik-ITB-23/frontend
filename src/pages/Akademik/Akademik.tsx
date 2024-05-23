@@ -74,7 +74,7 @@ const Akademik = () => {
             </h1>
             <div className="w-full grid grid-cols-2 px-4 md:px-0 lg:grid-cols-3 2xl:grid-cols-4 gap-3 md:gap-6 justify-items-center">
               <div className="w-full">
-                <AkademikCard imageUrl="/Akademik/Mat.svg" heading="Matematika IIA" LinkTo="/akademik/matematika-2a/">
+                <AkademikCard imageUrl="/Akademik/Mat.svg" heading="Matematika IIA" LinkTo="/akademik/matematika-2a">
                   MA1201
                 </AkademikCard>
               </div>

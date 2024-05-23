@@ -12,4 +12,9 @@ export const AkademikData: { [key: string]: AkademikDataType[] } = {
       linkDrive: "https://drive.google.com/file/d/1kC-vdojqbSN1m-9Y7d9HOlVEyoWRayfd/view?usp=drive_link",
     },
   ],
+  "fisika-dasar-2a": [],
+  "kimia-dasar-b": [],
+  "komputasi-dan-masyarakat": [],
+  "olah-raga": [],
+  "dasar-pemrograman": [],
 };
