@@ -1,10 +1,12 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { GoHome, GoCopilot } from "react-icons/go";
 import { IoMdBook } from "react-icons/io";
 import { RiGroupLine } from "react-icons/ri";
 import { useLocation } from "react-router-dom";
 import { HashLink as NavLink } from "react-router-hash-link";
+import SignInMicrosoftButton from "./SignInMicrosoftButton";
+import { CurrentUserContext } from "../../contexts/CurrentUserContext";
 
 const NavListDesktop = ({ href, routerPathname, lable }: { href: string; routerPathname: string; lable: string }) => (
   <NavLink smooth to={href} className="hidden md:block h-full">
@@ -18,6 +20,7 @@ const NavListDesktop = ({ href, routerPathname, lable }: { href: string; routerP
 );
 
 const Navbar = ({ mainColor = "#101351", mainTextColor }: { mainColor?: string; mainTextColor?: string }) => {
+  const { user } = useContext(CurrentUserContext);
   const pathName = useLocation().pathname;
 
   const [scrollDirection, setScrollDirection] = useState(true);
@@ -82,7 +85,7 @@ const Navbar = ({ mainColor = "#101351", mainTextColor }: { mainColor?: string; 
             : "bg-[" + mainColor + "]"
         }`}>
         <div className="w-full px-2 mx-auto">
-          <div className="relative flex items-center justify-between">
+          <div className="relative flex items-center justify-between w-full max-w-[1740px] mx-auto">
             <NavLink smooth to="/" className="w-fit h-[5rem] flex items-center gap-4 pl-4">
               <div className={`h-4 min-h-full py-2 transition-all duration-300`}>
                 <img
@@ -117,6 +120,13 @@ const Navbar = ({ mainColor = "#101351", mainTextColor }: { mainColor?: string; 
               </div>
 
               {/* Sign IN */}
+              {user?.displayName ? (
+                <button className="text-white px-4 py-2 rounded-full border-[1px] border-white">
+                  {user.displayName.length > 8 ? user.displayName.split(" ")[0] : user.displayName}
+                </button>
+              ) : (
+                <SignInMicrosoftButton />
+              )}
 
               {/* Mobile Nav Button */}
               <button

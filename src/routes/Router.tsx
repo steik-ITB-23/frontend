@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import PageHome from "../pages/PageHome";
+import PageHome from "../pages/Home/PageHome";
 import Layout from "./Layout";
 import PageTentangBpa from "../pages/PageTentangBPA";
 import Custom404 from "../pages/Page404";

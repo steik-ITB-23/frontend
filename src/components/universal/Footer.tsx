@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
       </div>
       <footer className="w-full h-fit px-4 lg:px-8 bg-[#151655] text-white z-[200]">
-        <div className="w-full h-full grow-0 flex flex-col mx-auto py-2">
+        <div className="w-full h-full grow-0 flex flex-col py-2 max-w-[1740px] mx-auto">
           <div className="flex justify-between py-2">
             <div className="flex gap-2 items-center grow-0">
               <div className="w-14 h-14 rounded-full">

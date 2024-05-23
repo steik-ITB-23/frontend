@@ -1,10 +1,10 @@
-import BPASteik23 from "../sections/home/BPASteik23";
-import ProgramKami from "../sections/home/ProgramKami";
-import SliderHome from "../sections/home/SliderHome";
-import UpcomingEvents from "../sections/home/UpcomingEvents";
+import BPASteik23 from "./containers/BPASteik23";
+import ProgramKami from "./containers/ProgramKami";
+import SliderHome from "./containers/SliderHome";
+import UpcomingEvents from "./containers/UpcomingEvents";
 import { useEffect } from "react";
 import AOS from "aos";
-import Footer from "../components/universal/Footer";
+import Footer from "../../components/universal/Footer";
 
 export default function Home() {
   useEffect(() => {

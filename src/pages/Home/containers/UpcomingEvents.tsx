@@ -1,4 +1,4 @@
-import Event from "../../components/universal/Event";
+import Event from "../../../components/universal/Event";
 
 const UpcomingEvents = () => {
   return (
