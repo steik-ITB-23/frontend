@@ -2,6 +2,7 @@ import BPASteik23 from "./containers/BPASteik23";
 import ProgramKami from "./containers/ProgramKami";
 import SliderHome from "./containers/SliderHome";
 import UpcomingEvents from "./containers/UpcomingEvents";
+import SurveiJurusan from "./containers/SurveiJurusan";
 import { useEffect } from "react";
 import AOS from "aos";
 import Footer from "../../components/universal/Footer";
@@ -30,6 +31,8 @@ export default function Home() {
       </div>
 
       <UpcomingEvents />
+
+      <SurveiJurusan />
 
       <ProgramKami />
 
