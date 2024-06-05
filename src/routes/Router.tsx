@@ -6,6 +6,7 @@ import Custom404 from "../pages/Page404";
 import PageComingSoon from "../pages/PageComingSoon";
 import Akademik from "../pages/Akademik/Akademik";
 import Matkul from "../pages/Akademik/Matkul";
+import Profile from "../pages/Profile/Profile";
 // import Profile from "../pages/Profile/Profile";
 
 const router = createBrowserRouter([
@@ -41,8 +42,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/profile/:nim",
-        element: <PageComingSoon />,
-        // element: <Profile />,
+        element: <Profile />,
       },
     ],
   },

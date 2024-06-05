@@ -1,5 +1,6 @@
 // hooks/useFetch.ts
 
+import { AxiosResponse } from "axios";
 import { useState, useEffect } from "react";
 
 interface FetchResult<T> {
@@ -8,7 +9,7 @@ interface FetchResult<T> {
   error: Error | null;
 }
 
-const useFetch = <T>(fetchFunction: () => Promise<Response>): FetchResult<T> => {
+const useFetch = <T>(fetchFunction: () => Promise<AxiosResponse<T>>): FetchResult<T> => {
   const [data, setData] = useState<T | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<Error | null>(null);
@@ -18,11 +19,7 @@ const useFetch = <T>(fetchFunction: () => Promise<Response>): FetchResult<T> => 
       try {
         setLoading(true);
         const response = await fetchFunction();
-        if (!response.ok) {
-          throw new Error("Failed to fetch data");
-        }
-        const fetchedData: T = await response.json();
-        setData(fetchedData);
+        setData(response.data);
         setLoading(false);
       } catch (error) {
         setError(error as Error);
